@@ -2,10 +2,6 @@ import { Schema, model } from "mongoose";
 import { IUser } from "./user.interface";
 
 const userSchema = new Schema<IUser>({
-    id: {
-        type: String,
-        required: true
-    },
     role: {
         type: String,
         required: true
@@ -26,7 +22,7 @@ const userSchema = new Schema<IUser>({
         },
     },
     dateOfBirth: {
-        type: Date, required: true
+        type: Date
     },
     gender: {
         type: String, required: true
