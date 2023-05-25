@@ -23,3 +23,4 @@ export const getUserByIdFromDB = async (payload: string):Promise<IUser | null> =
 
     return user
 }
+
